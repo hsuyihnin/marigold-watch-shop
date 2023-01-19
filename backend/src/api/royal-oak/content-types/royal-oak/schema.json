@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "royal_oaks",
+  "info": {
+    "singularName": "royal-oak",
+    "pluralName": "royal-oaks",
+    "displayName": "RoyalOak",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mbrand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::man-watch-brand.man-watch-brand",
+      "inversedBy": "royal_oaks"
+    },
+    "dial": {
+      "type": "text"
+    },
+    "size": {
+      "type": "integer"
+    },
+    "material": {
+      "type": "string"
+    },
+    "bracelet": {
+      "type": "text"
+    },
+    "setting": {
+      "type": "text"
+    }
+  }
+}

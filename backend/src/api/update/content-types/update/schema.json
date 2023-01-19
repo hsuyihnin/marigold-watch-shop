@@ -1,0 +1,15 @@
+{
+  "kind": "collectionType",
+  "collectionName": "updates",
+  "info": {
+    "singularName": "update",
+    "pluralName": "updates",
+    "displayName": "updates",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

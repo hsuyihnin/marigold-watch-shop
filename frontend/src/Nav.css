@@ -1,0 +1,59 @@
+.nav {
+  position: relative;
+}
+
+.logo img {
+  width: 45px;
+}
+.logo {
+  position: absolute;
+  z-index: 1;
+  left: 51.4%;
+  top: 34%;
+}
+
+.navbar {
+  gap: 5rem;
+}
+ul li {
+  cursor: pointer;
+}
+.underline {
+  position: absolute;
+  opacity: 1;
+  transform: translate(-20px, 12px);
+  background-color: black;
+  height: 2px;
+  border-radius: 20px;
+  visibility: hidden;
+  transition: transform 0.2s;
+}
+ul li:hover {
+  color: red;
+}
+.brand-list {
+  position: relative;
+}
+.brands {
+  position: absolute;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition-duration: transform 0.2s ease-in;
+  transition-delay: 1s;
+  background-color: white;
+  border: 1px solid lightgray;
+  color: black;
+}
+
+.brands:hover {
+  position: fixed;
+}
+.brand-list:hover .underline {
+  visibility: visible;
+  transform: translate(-5px, 12px);
+}
+.brand-list:hover .brands {
+  visibility: visible;
+
+  transform: translateY(20px);
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "man_watch_brands",
+  "info": {
+    "singularName": "man-watch-brand",
+    "pluralName": "man-watch-brands",
+    "displayName": "mbrand",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "royal_oaks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::royal-oak.royal-oak",
+      "mappedBy": "mbrand"
+    }
+  }
+}
